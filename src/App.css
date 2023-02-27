@@ -26,6 +26,18 @@
 
 .App-link {
   color: #61dafb;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.projects-link {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.App-link {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 @keyframes App-logo-spin {

@@ -7,16 +7,39 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Irfan Zainudin
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <span>
+          <a
+            className="App-link"
+            // href="projects.irfanzainudin.com"
+            href="irfanzainudin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Projects
+          </a>
+          |
+          <a
+            className="App-link"
+            // href="projects.irfanzainudin.com"
+            href="irfanzainudin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </a>
+          |
+          <a
+            className="App-link"
+            // href="projects.irfanzainudin.com"
+            href="irfanzainudin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Games
+          </a>
+        </span>
       </header>
     </div>
   );
