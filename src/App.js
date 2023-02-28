@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Main />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Irfan Zainudin
@@ -40,7 +42,7 @@ function App() {
             Games
           </a>
         </span>
-      </header>
+      </header> */}
     </div>
   );
 }
