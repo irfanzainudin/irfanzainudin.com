@@ -1,8 +1,9 @@
 import './App.css';
 import {
   BrowserRouter,
+  Routes,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
 // components
@@ -15,15 +16,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Link to="/projects" />
-        <Switch>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/">
-            <Main />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="projects" element={<Projects />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
