@@ -1,48 +1,30 @@
-// import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Route,
+  Link
+} from "react-router-dom";
+
+// components
 import Main from './components/Main';
+
+// pages
+import Projects from './pages/Projects';
 
 function App() {
   return (
     <div className="App">
-      <Main />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Irfan Zainudin
-        </p>
-        <span>
-          <a
-            className="App-link"
-            // href="projects.irfanzainudin.com"
-            href="irfanzainudin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Projects
-          </a>
-          |
-          <a
-            className="App-link"
-            // href="projects.irfanzainudin.com"
-            href="irfanzainudin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
-          |
-          <a
-            className="App-link"
-            // href="projects.irfanzainudin.com"
-            href="irfanzainudin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Games
-          </a>
-        </span>
-      </header> */}
+      <BrowserRouter>
+        <Link to="/projects" />
+        <Switch>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
