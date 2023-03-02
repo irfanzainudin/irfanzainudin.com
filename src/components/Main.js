@@ -15,37 +15,14 @@ function Main() {
           Irfan Zainudin
         </p>
         <span>
-          {/* <a
-            className="App-link"
-            // href="projects.irfanzainudin.com"
-            href="irfanzainudin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          > */}
           <Link className="App-link" to={'/projects'}>
             Projects
           </Link>
-          {/* </a> */}
           |
-          <a
-            className="App-link"
-            // href="projects.irfanzainudin.com"
-            href="irfanzainudin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
-          |
-          <a
-            className="App-link"
-            // href="projects.irfanzainudin.com"
-            href="irfanzainudin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Games
-          </a>
+          {/* &bull; */}
+          <Link className='App-link' to={'/projects'}>
+            CV
+          </Link>
         </span>
       </header>
     </div>

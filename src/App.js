@@ -1,13 +1,14 @@
-import './App.css';
 import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
 
 // components
 import Main from './components/Main';
+
+// stylesheets
+import './App.css';
 
 // pages
 import Projects from './pages/Projects';

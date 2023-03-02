@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
 .App {
   text-align: center;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-family: "Figtree", sans-serif;
 }
 
 .App-logo {
@@ -26,13 +30,7 @@
 
 .App-link {
   color: #61dafb;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.projects-link {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 1rem;
 }
 
 .App-link {
