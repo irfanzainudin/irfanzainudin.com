@@ -11,6 +11,7 @@ import Main from './components/Main';
 import './App.css';
 
 // pages
+import About from './pages/About';
 import Projects from './pages/Projects';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
