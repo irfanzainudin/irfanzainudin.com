@@ -17,8 +17,8 @@
   }
 }
 
-main,
-.App-header {
+.App-header,
+.App-main {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;

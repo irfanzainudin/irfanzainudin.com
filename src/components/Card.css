@@ -1,0 +1,21 @@
+.Card {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  min-width: 20vw;
+  max-width: 20vw;
+  position: relative;
+}
+
+.Card > header {
+  color: red;
+}
+
+.Card-status {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
