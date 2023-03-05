@@ -10,12 +10,9 @@
   color: white;
 }
 
-.Projects-section {
-  margin: auto;
-}
-
 .Projects-section > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }

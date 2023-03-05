@@ -10,9 +10,9 @@
   position: relative;
 }
 
-.Card > header {
+/* .Card > header {
   color: red;
-}
+} */
 
 .Card-status {
   position: absolute;
