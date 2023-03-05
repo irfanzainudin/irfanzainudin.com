@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWrench, faGlobe, faSpinner, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { faWrench, faGlobe, faSpinner, faCircleCheck, faCertificate } from '@fortawesome/free-solid-svg-icons'
 import { faConnectdevelop } from '@fortawesome/free-brands-svg-icons'
 import './Projects.css';
 
@@ -49,7 +49,8 @@ function Projects() {
             <Card title="Visual Novel" status={<FontAwesomeIcon icon={faSpinner} spin />} body="A Quran web app" />
             <Card title="VC" status={<FontAwesomeIcon icon={faSpinner} spin />} body="A Quran web app" />
             <Card title="Sayang" status={<FontAwesomeIcon icon={faSpinner} spin />} body="A Quran web app" />
-            <Card title="FreeCodeCamp's Certification Projects" status={<FontAwesomeIcon icon={faCircleCheck} />} body="A Quran web app" />
+            <Card title="FreeCodeCamp's Certification Projects" status={<FontAwesomeIcon icon={faCircleCheck} />} body="A Quran web app" links={
+          <a href="https://www.freecodecamp.org/irfanzainudin"><FontAwesomeIcon icon={faCertificate} className="App-link" /></a>} />
           </div>
         </section>
       </main>

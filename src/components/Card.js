@@ -1,6 +1,9 @@
 import React from 'react';
 import './Card.css';
 // import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Card(props) {
   return (
@@ -11,6 +14,9 @@ function Card(props) {
 		</header>
 		<main>
 			<small>{props.body}</small>
+			<div className='socials'>
+				{props.links}
+			</div>
 		</main>
     </div>
   );
