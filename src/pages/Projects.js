@@ -46,6 +46,7 @@ function Projects() {
         <section className='Misc. Projects-section'>
           <h3>Miscellaneous</h3>
           <div>
+            <Card title="CSS Paintings" status={<FontAwesomeIcon icon={faSpinner} spin />} body="..." />
             <Card title="VC" status={<FontAwesomeIcon icon={faSpinner} spin />} body="..." />
             <Card title="FreeCodeCamp's Certification Projects" status={<FontAwesomeIcon icon={faCircleCheck} />} body="" links={
           <a href="https://www.freecodecamp.org/irfanzainudin"><FontAwesomeIcon icon={faCertificate} className="App-link" /></a>} />
