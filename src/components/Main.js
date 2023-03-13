@@ -8,12 +8,17 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Canvas } from "@react-three/fiber";
+import Logo from './Logo.js'
 
 function Main() {
   return (
     <div className="Main">
 		  {/* <video src={videoBg} type="video/mp4" autoPlay loop controls /> */}
       <header className="App-header">
+        <Canvas>
+          <Logo />
+        </Canvas>
         <img src={logo} className="App-logo" alt="logo" />
         <h3>
           Irfan Zainudin
