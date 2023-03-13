@@ -17,6 +17,8 @@ function Main() {
 		  {/* <video src={videoBg} type="video/mp4" autoPlay loop controls /> */}
       <header className="App-header">
         <Canvas>
+          <pointLight position={[10, 10, 10]} />
+          <ambientLight />
           <Logo />
         </Canvas>
         <img src={logo} className="App-logo" alt="logo" />

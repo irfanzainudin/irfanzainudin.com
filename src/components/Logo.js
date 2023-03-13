@@ -20,10 +20,10 @@ function Logo(props) {
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}
     >
-      <cylinderGeometry args={[1, 1, 1]} />
+      <torusGeometry args={[2.0, 0.2, 32, 32]} />
       <meshStandardMaterial
         wireframe={props.wireframe}
-        color={hovered ? "hotpink" : "orange"}
+        color={hovered ? "red" : "#61dafb"}
       />
     </mesh>
   );
