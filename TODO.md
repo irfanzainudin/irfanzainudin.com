@@ -2,7 +2,8 @@
 
 <!-- - [ ] -->
 
-- [ ] Make the React logo 3d
+- [x] Make the React logo 3D
+  - [ ] Animate the 3D React logo
 - [ ] Make the video background work (file corrupted for some reason)
 - [x] Add socials (Email, Twitter, Github, Codepen)
 - [ ] Work on Projects page
