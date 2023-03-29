@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.svg';
+// import logo from '../logo.svg';
 import {
   Link
 } from "react-router-dom";
@@ -20,13 +20,6 @@ function Main() {
         <h3>
           Irfan Zainudin
         </h3>
-        <div className='socials'>
-          <a href="mailto:m.irfan.zain@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="App-link" /></a>
-          <a href="https://github.com/irfanzainudin"><FontAwesomeIcon icon={faGithub} className="App-link" /></a>
-          <a href="https://twitter.com/irfan__zainudin"><FontAwesomeIcon icon={faTwitter} className="App-link" /></a>
-        </div>
-      </header>
-      <main className='App-main'>
         <span>
           <Link className="App-link" to={'/projects'}>
             Projects
@@ -38,10 +31,17 @@ function Main() {
           </Link>
           {/* | */}
           &bull;
-          <Link className='App-link' to={'/about'}>
-            About
+          <Link className='App-link' to={'/blog'}>
+            Blog
           </Link>
         </span>
+      </header>
+      <main className='App-main'>
+        <div className='socials'>
+          <a href="mailto:m.irfan.zain@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="App-link" /></a>
+          <a href="https://github.com/irfanzainudin"><FontAwesomeIcon icon={faGithub} className="App-link" /></a>
+          <a href="https://twitter.com/irfan__zainudin"><FontAwesomeIcon icon={faTwitter} className="App-link" /></a>
+        </div>
       </main>
     </div>
   );
