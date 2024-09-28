@@ -1,0 +1,92 @@
+.cogs {
+    position: fixed;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.cogs-reverse {
+    position: fixed;
+    -webkit-animation:spin 4s linear infinite reverse;
+    -moz-animation:spin 4s linear infinite reverse;
+    animation:spin 4s linear infinite reverse;
+}
+
+/* Genesis Cog */
+#starter-cog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    color: gold;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+#starter-cog:hover {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+#helper-cog {
+    top: 54.5%;
+    left: 51.7%;
+    font-size: 3rem;
+}
+
+#cog1 {
+    top: 6.6%;
+    left: 5.5%;
+    font-size: 5rem;
+    color: goldenrod;
+}
+
+#cog2 {
+    top: 0%;
+    left: 0%;
+    font-size: 6rem;
+    color: crimson;
+}
+
+#cog3 {
+    top: 7.7%;
+    left: 10.3%;
+    font-size: 6rem;
+    color: cadetblue;
+}
+
+#cog3-4 {
+    top: 18%;
+    left: 8.3%;
+    font-size: 4.5rem;
+    color:steelblue;
+}
+
+#cog4 {
+    top: 17.5%;
+    left: 14%;
+    font-size: 5rem;
+    color: darkolivegreen;
+}
+
+#cog5 {
+    top: 26.8%;
+    left: 13.5%;
+    font-size: 4rem;
+    color: yellowgreen;
+}
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
