@@ -1,0 +1,80 @@
+.bookshelf {
+    display: flex;
+    gap: 1px;
+}
+
+.books:hover {
+    width: 150px;
+}
+
+@keyframes slowturn {
+    0% {
+        width: 38px;
+    }
+    50% {
+        width: 90px;
+    }
+    100% {
+        width: 130px;
+    }
+}
+
+#book1 {
+    background-image: url("./bookshelf/GiantBook-Spines-Style-Oliver.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#book1:hover {
+    width: 130px;
+    border-radius: 5px;
+    animation: slowturn .5s linear 0s;
+    animation-fill-mode: forwards;
+    background-image: url("./bookshelf/dickens-oliver-twist.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#book1a {
+    background-image: url("./bookshelf/GiantBook-Spines-Style-Oliver.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 200px;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#book1a:hover {
+    width: 130px;
+    border-radius: 5px;
+}
+
+#book2 {
+    background-color: crimson;
+    width: 50px;
+    height: 200px;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#book2:hover {
+    width: 150px;
+    /* background-color: cadetblue; */
+}
+
+#book3 {
+    background-color: crimson;
+    width: 50px;
+    height: 200px;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#book3:hover {
+    width: 150px;
+    /* background-color: greenyellow; */
+}
