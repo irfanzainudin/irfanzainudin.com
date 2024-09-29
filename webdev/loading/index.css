@@ -259,24 +259,3 @@ h1 {
     transform: scaleX(1);
   }
 }
-
-/* Books */
-
-.bookshelf {
-	height: 50%;
-  width: 100%;
-  transition: transform 0.25s;
-}
-
-.books {
-  width: 50px;
-  height: 200px;
-  border-radius: 10px;
-  background-color: crimson;
-  /* transition: width 0.5s; */
-}
-
-.books:hover {
-  /* width: 100px; */
-  transform: translate3d(0, 0, 100vmin) rotateX(calc(var(--rotation-y, 0) * 1deg)) rotateY(calc(var(--rotation-x, 0) * 1deg));
-}
