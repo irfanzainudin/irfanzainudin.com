@@ -6,17 +6,7 @@
         <title>Bookshelf</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-        <!-- <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous"
-        /> -->
-        <!-- Bootstrap Icons CSS -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
         <!-- My own stylesheet -->
-        <!-- <link rel="stylesheet" href="../style.css"> -->
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -25,12 +15,41 @@
             <p>A smol web component that I made.</p>
         </hgroup>
         <section class="bookshelf">
-            <div class="books" id="book1"></div>
             <div class="books" id="book1a"></div>
             <div class="books" id="book2"></div>
             <div class="books" id="book3"></div>
+            <div class="books" id="book1"></div>
         </section>
-        <!-- Bootstrap JS -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+        <hgroup>
+            <h2>3D Bookshelf</h2>
+            <p>A smol web component that I made with inspiration from <a href="../loading/">Loading</a>.</p>
+            <p>Click to see the 3 dimensional books.</p>
+        </hgroup>
+        <div class="body">
+            <input class="sr-only" type="checkbox" id="flip">
+            <label for="flip"></label>
+            <div class="container">
+                <div class="scene">
+                    <div class="bar">
+                        <section class="bookshelf">
+                            <!-- spines -->
+                            <div class="tdbooks-spine tdbooks__segment tdbooks__segment--aligned" style="--name:  segment-1; --delay:   0; --length: 20; --depth:   0;">
+                                <!-- <small style="writing-mode: vertical-rl;">Pride and Prejudice</small> -->
+                            </div>
+                            <!-- <div class="tdbooks-spine" id="tdbook2">
+                                <small style="writing-mode: vertical-rl; text-orientation: upright;">Emma</small>
+                            </div> -->
+                            <!-- <div class="tdbooks-spine" id="tdbook3"></div> -->
+                            <!-- <div class="tdbooks-spine" id="tdbook1"></div> -->
+                            <!-- pages -->
+                            <div class="tdbooks-page" id="page" style="--name:  segment-1; --delay:  0; --length: 50; --depth:   0;"></div>
+                            <!-- <div class="tdbooks-spine" id="page" style="--name:  segment-1; --delay:  0; --length: 50; --depth:   0;"></div> -->
+                            <!-- covers -->
+                            <div class="tdbooks-cover tdbooks__segment tdbooks__segment--back" id="cover" style="--name:  segment-3; --delay:  0; --length: 60; --depth:   25;"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
