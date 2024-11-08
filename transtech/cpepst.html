@@ -53,9 +53,9 @@
             const title = element.getAttribute("title");
             element.addEventListener("click", () => {
                 if (element.textContent.includes(title)) {
-                    element.innerHTML = element.textContent.split(' (')[0];
+                    element.innerHTML = element.innerHTML.split(' (')[0];
                 } else {
-                    element.innerHTML = element.textContent + ` (<i>${element.getAttribute("title")}</i>)`;
+                    element.innerHTML = element.innerHTML + ` (<i>${element.getAttribute("title")}</i>)`;
                 }
             });
         })
