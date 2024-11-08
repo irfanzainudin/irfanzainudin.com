@@ -46,5 +46,19 @@
         <li>Reka bentuk dan Pelaksanaan Editor Teks Win32 <a href="https://www.catch22.net/tuts/neatpad/">(web)</a></li>
         <li>Data Structures and Algorithms in Java <a href="https://amzn.to/36k1kEv">(Amazon)</a></li>
     </ul>
+    <script>
+        const newterms = document.querySelectorAll(".terma-baru");
+
+        newterms.forEach(element => {
+            const title = element.getAttribute("title");
+            element.addEventListener("click", () => {
+                if (element.textContent.includes(title)) {
+                    element.innerHTML = element.textContent.split(' (')[0];
+                } else {
+                    element.innerHTML = element.textContent + ` (<i>${element.getAttribute("title")}</i>)`;
+                }
+            });
+        })
+    </script>
 </body>
 </html>

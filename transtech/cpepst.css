@@ -183,6 +183,9 @@ blockquote p {
 .terma-baru {
     background-color: yellow;
     border: solid 1px black;
+
+    /* POINTER */
+    cursor: pointer;
     
     /* CONTENT */
     content: "termabaru:";
