@@ -7,22 +7,44 @@
     <link rel="stylesheet" href="cpepst.css">
 </head>
 <body>
-    <h1>Projek mencabar setiap pengaturcara patut cuba</h1>
+    <div style="margin-top: 1rem;">
+        <small>Teks sumber diambil daripada blog Austin Henley: <a href="https://austinhenley.com/blog/challengingprojects.html">Challenging projects every programmer should try</a></small>
+    </div>
+    <h1>Projek mencabar setiap <span class="terma-baru" title="programmer">pengaturcara</span> patut cuba</h1>
     <small>11 Disember 2019</small>
     <br/>
     <br/>
-    <i>Perkongsian ini telah menggalakkan pelbagai perbincangan dalam <a href="https://news.ycombinator.com/item?id=21790779">Hacker News</a>, <a href="https://www.reddit.com/r/programming/comments/ean6ch/challenging_projects_every_programmer_should_try/">Reddit</a> dan sekali lagi dalam <a href="https://news.ycombinator.com/item?id=38768678">Hacker News</a>. Saya telah kumpulkan sebahagian dari projek yang dicadangkan [dalam perbincangan] dan senaraikan mereka di penghujung perkongsian ini.</i>
+    <i>Perkongsian ini telah menggalakkan pelbagai perbincangan dalam <a href="https://news.ycombinator.com/item?id=21790779">Hacker News</a>, <a href="https://www.reddit.com/r/programming/comments/ean6ch/challenging_projects_every_programmer_should_try/">Reddit</a> dan sekali lagi dalam <a href="https://news.ycombinator.com/item?id=38768678">Hacker News</a>. Saya telah kumpulkan sebahagian dari projek yang dicadangkan dan senaraikan mereka di penghujung perkongsian ini.</i>
     <p>Tengok sambungan kepada perkongsian ni: <a href="">Lagi projek mencabar setiap pengaturcara patut cuba</a></p>
     <p>Tengok sambungan kedua juga: <a href="">Algoritma dan struktur data mencabar setiap pengaturcara patut cuba</a></p>
     <hr/>
-    <p>Saya bercakap dengan ramai pelajar dan pengaturcara profesional yang sering kali ingin memulakan projek sampingan, tetapi tidak pasti apa yang hendak dibina. Berikut merupakan sekumpulan projek perisian yang banyak mengajar saya. Malah, ia hebat kerana anda boleh membinanya beberapa kali dan anda akan mempelajari perkara baharu setiap kali. Jadi apabila saya tidak tahu apa yang hendak dibina atau saya ingin mempelajari bahasa pengaturcaraan atau rangka kerja baharu, saya mulakan dengan salah satu daripada ini:</p>
+    <p>Saya bercakap dengan ramai pelajar dan pengaturcara profesional yang sering kali ingin memulakan projek sampingan, tetapi tidak pasti apa yang hendak dibina. Berikut merupakan sekumpulan projek perisian yang banyak mengajar saya. Malah, ia hebat kerana anda boleh membinanya banyak kali dan anda akan mempelajari perkara baharu setiap kali. Jadi apabila saya tidak tahu apa yang hendak dibina atau saya ingin mempelajari bahasa pengaturcaraan atau <span class="terma-baru" title="Framework">rangka kerja</span> baharu, saya mulakan dengan salah satu daripada ini:</p>
     <ul>
-        <li>Penyunting teks</li>
+        <li><span class="terma-baru" title="Text editor">Editor teks</span></li>
         <li>Permainan 2D - Space Invaders</li>
-        <li>Penyusun - Tiny BASIC</li>
-        <li>Sistem pengendalian kecil</li>
-        <li><span class="clarification" title="English: Spreadsheet">Hamparan (<i>sukar!</i>)</span></li>
+        <li><span class="terma-baru" title="Compiler">Pengkompil</span> - Tiny BASIC</li>
+        <li><span class="terma-baru" title="Mini operating system">Sistem pengendalian kecil</span></li>
+        <li><span class="terma-baru" title="Spreadsheet">Hamparan</span> (<i>sukar!</i>)</li>
         <li>Emulator konsol permainan video (<i>sukar!</i>)</li>
+    </ul>
+    <h3>Penyunting teks</h3>
+    <p>Kita menggunakan editor teks setiap hari, tetapi adakah anda tahu bagaimana ia benar-benar berfungsi? Mengabaikan semua ciri mewah yang ada pada editor kegemaran anda, bagaimanakah anda akan melaksanakan kotak teks yang menyokong <span class="terma-baru" title="movable text cursor">kursor teks alih</span> dan memilih, memasukkan dan memadam teks? Tanpa menggunakan <span class="terma-baru" title="builtin textbox component">komponen kotak teks terbina</span> dalam rangka kerja <span class="terma-baru" title="antara muka grafik pengguna (GUI)">GUI</span> kegemaran anda!</p>
+    <p>Cabaran terbesar ialah memikirkan cara menyimpan dokumen teks dalam <span class="terma-baru" title="memory">ingatan</span>. Fikiran pertama saya ialah menggunakan <span class="terma-baru" title="array">tatasusunan</span>, tetapi itu mempunyai <span class="terma-baru" title="performance">prestasi</span> yang mengerikan jika pengguna memasukkan teks di mana-mana selain daripada penghujung dokumen. Nasib baik, ada beberapa struktur data yang bagus untuk dipelajari untuk menyelesaikannya.</p>
+    <p>Satu lagi halangan ialah mempelajari cara kursor teks berkelakuan dalam editor popular. Sebagai contoh, jika saya menekan kekunci anak panah ke atas apabila kursor di tengah-tengah dokumen, ke manakah kursor akan bergerak? Lajur yang sama? Tidak jika baris itu lebih pendek. Jika anda terus menggerak kursor ke atas, ia akan kembali ke lajur asal apabila baris cukup panjang. Ternyata kursor mempunyai memori/ingatan untuk lajur dan cuba untuk kembali kepadanya. Perincian beginilah yang saya tidak pernah perasan sehingga saya cuba melaksanakannya.</p>
+    <img class="center" src="../images/textcursor.gif" />
+    <p>Selepas melaksanakan editor asas, saya mencabar anda untuk melaksanakan dua lagi ciri: <span class="terma-baru" title="undo">buat asal</span>/<span class="terma-baru" title="redo">buat semula</span> dan <span class="terma-baru" title="word wrapping">pembalutan perkataan</span>. Melaksanakan buat asal/buat semula dengan cara yang cekap amat mengejutkan saya! Saya mula-mula cuba menyimpan <span class="terma-baru" title="previous states">keadaan sebelum</span> dalam satu tatasusunan, kemudian cuba menggunakan corak Memento, sebelum akhirnya berpuas hati dengan corak Command. Pembalutan perkataan memaksa anda untuk memisahkan aspek <i>visual</i> baris teks daripada aspek ingatan.</p>
+    <p>Perkara yang perlu dipelajari:</p>
+    <ul>
+        <li>Struktur data untuk menyimpan teks: tatasusunan, <span class="terma-baru" title="rope">tali</span> <a href="https://en.wikipedia.org/wiki/Rope_(data_structure)">[pautan]</a>, <span class="terma-baru" title="gap buffer"><i>gap buffer</i></span> <a href="https://en.wikipedia.org/wiki/Gap_buffer">[pautan]</a>, <span class="terma-baru" title="piece table"><i>piece table</i></span> <a href="https://en.wikipedia.org/wiki/Piece_table">[pautan]</a>.</li>
+        <li>Kelakuan dan pelaksanaan kursor teks.</li>
+        <li>Corak reka bentuk untuk buat asal/buat semula: memento <a href="https://en.wikipedia.org/wiki/Memento_pattern">[pautan]</a>, command <a href="https://en.wikipedia.org/wiki/Command_pattern">[pautan]</a>.</li>
+        <li>Abstraksi untuk memisahkan aspek visual dan aspek ingatan teks.</li>
+    </ul>
+    <p>Bacaan lanjut:</p>
+    <ul>
+        <li>"Text Editor: Data Structures" <a href="https://www.averylaird.com/programming/the%20text%20editor/2017/09/30/the-piece-table">(web)</a></li>
+        <li>Reka bentuk dan Pelaksanaan Editor Teks Win32 <a href="https://www.catch22.net/tuts/neatpad/">(web)</a></li>
+        <li>Data Structures and Algorithms in Java <a href="https://amzn.to/36k1kEv">(Amazon)</a></li>
     </ul>
 </body>
 </html>

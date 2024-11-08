@@ -179,3 +179,15 @@ blockquote p {
     text-decoration-style: dotted;
     color: blue;
 }
+
+.terma-baru {
+    background-color: yellow;
+    border: solid 1px black;
+    
+    /* CONTENT */
+    content: "termabaru:";
+}
+
+img {
+    max-width: 60%;
+}
