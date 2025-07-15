@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    /* border: 1px solid black; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left-wall {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.centre-core {
+    position: absolute;
+    inset-inline-start: calc(40vw - 25px);
+    inset-block-start: calc(30vh - 25px);
+    font-size: 50px;
+    padding: 10vw;
+    border: 10px solid black;
+    /* border-radius: 50%; */
+    background-color: yellow;
+    z-index: 5;
+}
+
+#centre_core_shadow {
+    position: absolute;
+    inset-inline-start: calc(40vw - 25px);
+    inset-block-start: calc(30vh - 25px);
+    font-size: 50px;
+    padding: 10vw;
+    border: 10px solid #8B8000;
+    background-color: #8B8000;
+    z-index: 4;
+}
+
+.right-wall {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+/* CSS Animations */
+
+.animate-centre-core {
+    /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    /* animation:
+       [animation-duration]
+       [animation-easing-function]/[animation-timing-function]
+       [animation-delay]
+       [animation-iteration-count]
+       [animation-direction]
+       [animation-fill-mode]
+       [animation-play-state]
+       [animation-name]
+     */
+    animation: 1s ease-in 0s 1 both running rotate-centre-core;
+}
+
+.exit-centre-core {
+    /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    /* animation:
+       [animation-duration]
+       [animation-easing-function]/[animation-timing-function]
+       [animation-delay]
+       [animation-iteration-count]
+       [animation-direction]
+       [animation-fill-mode]
+       [animation-play-state]
+       [animation-name]
+     */
+    animation: 1s linear 1s 1 both running slideoutright-centre-core;
+}
+
+@keyframes rotate-centre-core {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes slideoutright-centre-core {
+    from {
+        translate: 0;
+        transform: rotate(45deg);
+    }
+
+    to {
+        translate: 100vw;
+        transform: rotate(45deg);
+    }
+}
